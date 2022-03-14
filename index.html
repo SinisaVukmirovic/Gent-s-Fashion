@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gent's Fashion</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="script.js" defer></script>
+    <script defer src="./js/script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Gent's<span>Fashion</span></h1>
+        <h1>Gent's <span>Fashion</span></h1>
         <nav>
             <ul>
                 <li><a href="#vests">Vests</a></li>
@@ -21,9 +21,9 @@
     </header>
 
     <main class="app">
-        <section id="vests">
+        <section id="vests" data-category>
             <div class="category"><h2>Vests</h2></div>
-            <div class="slider">
+            <div class="slider" data-items>
                 <div class="item">
                     <img src="./imgs/vests/vest-1.png" alt="Men's vest">
                 </div>
@@ -40,12 +40,12 @@
                     <img src="./imgs/vests/vest-2.png" alt="Men's vest">
                 </div>
             </div>
-            <img src="./imgs/assets/pointer.svg" class="pointer-left hide" alt="Pointer left">
-            <img src="./imgs/assets/pointer.svg" class="pointer-right" alt="Pointer right">
+            <img src="./imgs/assets/pointer.svg" class="pointer-left hide" data-controls="left" alt="Pointer left">
+            <img src="./imgs/assets/pointer.svg" class="pointer-right" data-controls="right" alt="Pointer right">
         </section>
-        <section id="cardigans">
+        <section id="cardigans" data-category>
             <div class="category"><h2>Cardigans</h2></div>
-            <div class="slider">
+            <div class="slider"  data-items>
                 <div class="item">
                     <img src="./imgs/cardigans/cardigan-1.png" alt="Men's cardigan">
                 </div>
@@ -65,12 +65,12 @@
                     <img src="./imgs/cardigans/cardigan-5.png" alt="Men's cardigan">
                 </div>
             </div>
-            <img src="./imgs/assets/pointer.svg" class="pointer-left hide" alt="Pointer left">
-            <img src="./imgs/assets/pointer.svg" class="pointer-right" alt="Pointer right">
+            <img src="./imgs/assets/pointer.svg" class="pointer-left hide" data-controls="left" alt="Pointer left">
+            <img src="./imgs/assets/pointer.svg" class="pointer-right" data-controls="right" alt="Pointer right">
         </section>
-        <section id="watches">
+        <section id="watches" data-category>
             <div class="category"><h2>Watches</h2></div>
-            <div class="slider">
+            <div class="slider"  data-items>
                 <div class="item">
                     <img src="./imgs/watches/watch-1.png" alt="Men's wrist watch">
                 </div>
@@ -93,14 +93,14 @@
                     <img src="./imgs/watches/watch-7.png" alt="Men's wrist watch">
                 </div>
             </div>
-            <img src="./imgs/assets/pointer.svg" class="pointer-left hide" alt="Pointer left">
-            <img src="./imgs/assets/pointer.svg" class="pointer-right" alt="Pointer right">          
+            <img src="./imgs/assets/pointer.svg" class="pointer-left hide" data-controls="left" alt="Pointer left">
+            <img src="./imgs/assets/pointer.svg" class="pointer-right" data-controls="right" alt="Pointer right">          
         </section>
     </main>
 
-    <div class="intro-screen">
+    <!-- <div class="intro-screen">
         <img src="./imgs/assets/app-logo.svg" class="intro-logo" alt="App Logo on intro screen">
-    </div>
+    </div> -->
     <div class="landscape-mode">
         <p>No landscape mode on this screen size!</p>
     </div>    
