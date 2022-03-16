@@ -1,5 +1,8 @@
 :root {
     --theme-clr: goldenrod;
+    --vests-clr: #1f2535;
+    /* --cardigans-clr: #1f2535; */
+    /* --watches-clr: #1f2535; */
     --light-text-clr: #fff;
     --dark-text-clr: #000;
     --nav-bg-clr: #222;

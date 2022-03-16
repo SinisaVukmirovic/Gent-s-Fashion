@@ -11,12 +11,20 @@
     section {
         grid-template-columns: 1fr 4fr;
     }
-        section .pointer-left {
+        section .controls {
+            width: 80vw;
+            bottom: 10vh;
+            right: 0;
+
+            display: flex;
+            justify-content: space-evenly;
+        }
+        /* section .pointer-left {
             left: 20vw;
         }
         section .pointer-right {
             right: 5vw;
-        }
+        } */
         section .category {
             order: 1;
             width: 15vw;
@@ -65,12 +73,20 @@
     section {
         grid-template-columns: 1fr 3fr;
     }
-        section .pointer-left {
+        section .controls {
+            width: 80vw;
+            bottom: 10vh;
+            right: 0;
+
+            display: flex;
+            justify-content: space-evenly;
+        }
+        /* section .pointer-left {
             left: 25vw;
         }
         section .pointer-right {
             right: 10vw;
-        }
+        } */
         section .category {
             order: 1;
             width: 15vw;
@@ -123,14 +139,22 @@
     section {
         grid-template-columns: 1fr 3fr;
     }
-        section .pointer-left {
+        section .controls {
+            width: 80vw;
+            bottom: 10vh;
+            right: 0;
+
+            display: flex;
+            justify-content: space-evenly;
+        }
+        /* section .pointer-left {
             left: 25vw;
             height: 3rem;
         }
         section .pointer-right {
             right: 10vw;
             height: 3rem;
-        }
+        } */
         section .category {
             order: 1;
             width: 15vw;

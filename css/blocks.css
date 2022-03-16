@@ -1,7 +1,7 @@
 header {
     position: fixed;
     top: 0;
-    background-color: var(--nav-bg-clr);
+    background-color: var(--vests-clr);
     z-index: 111;
     width: 100vw;
     display: grid;
@@ -51,6 +51,7 @@ section {
     position: relative;
 }
     section .controls {
+        cursor: pointer;
         position: absolute;
         bottom: 22vh;
 
@@ -66,6 +67,8 @@ section .pointer-right {
 } */
     .pointer-left, 
     .pointer-right {
+        user-select: none;
+        transition: all 250ms linear;
         padding: .5rem;
         border: 2px solid var(--theme-clr);
         border-radius: 50%;
@@ -73,6 +76,15 @@ section .pointer-right {
     .pointer-left {
         transform: rotate(180deg);
     }
+        .pointer-left:hover, 
+        .pointer-right:hover {
+            background-color: var(--vests-clr);
+        }
+        .pointer-left:focus, 
+        .pointer-right:focus {
+            background-color: none;
+        }
+    
     /* section .pointer-left {
         left: 0;
         
