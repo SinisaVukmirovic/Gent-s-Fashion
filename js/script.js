@@ -24,6 +24,8 @@ controlBtns.forEach(btn => btn.addEventListener('click', () => {
     }
     
     if (btn.dataset.controls === 'prev') {
+        btn.parentElement.querySelector('.pointer-right').classList.remove('hide');
+
         if (activeIndex == 0) btn.parentElement.querySelector('.pointer-left').classList.add('hide'); 
 
         items.style.transform += 'translateX(100%)';  
