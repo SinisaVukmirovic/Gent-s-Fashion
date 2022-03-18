@@ -10,6 +10,9 @@ header {
     align-items: center;
     box-shadow: 2px 2px 4px #111;
 }
+header.cardigans-section { background-color: var(--cardigans-clr); }
+header.watches-section { background-color: var(--watches-clr); }
+
     h1 {
         display: flex;
         align-items: center;
@@ -68,7 +71,7 @@ section .pointer-right {
     .pointer-left, 
     .pointer-right {
         user-select: none;
-        transition: all 250ms linear;
+        transition: transform 250ms linear;
         padding: .5rem;
         border: 2px solid var(--theme-clr);
         border-radius: 50%;
@@ -80,6 +83,15 @@ section .pointer-right {
         .pointer-right:hover {
             background-color: var(--vests-clr);
         }
+
+        .pointer-left:active, 
+        .pointer-right:active {
+            transform: scale(.9);
+        }
+        .pointer-left:active {
+            transform: rotate(180deg);
+        }
+
         .pointer-left:focus, 
         .pointer-right:focus {
             background-color: none;
