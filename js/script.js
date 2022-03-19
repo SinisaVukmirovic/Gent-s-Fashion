@@ -37,7 +37,6 @@ controlBtns.forEach(btn => btn.addEventListener('click', () => {
 }));
 
 const intObsOptions = {
-    // threshold: .05,
     rootMargin: '-350px'
 };
 

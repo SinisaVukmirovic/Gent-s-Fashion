@@ -9,6 +9,7 @@ header {
     justify-items: center;
     align-items: center;
     box-shadow: 2px 2px 4px #111;
+    transition: background-color 300ms linear;
 }
 header.cardigans-section { background-color: var(--cardigans-clr); }
 header.watches-section { background-color: var(--watches-clr); }
@@ -83,6 +84,10 @@ section .pointer-right {
         .pointer-right:hover {
             background-color: var(--vests-clr);
         }
+        #cardigans .pointer-left:hover { background-color: var(--cardigans-clr); }
+        #cardigans .pointer-right:hover { background-color: var(--cardigans-clr); }
+        #watches .pointer-left:hover { background-color: var(--watches-clr); }
+        #watches .pointer-right:hover { background-color: var(--watches-clr); }
 
         .pointer-left:active, 
         .pointer-right:active {
@@ -142,10 +147,17 @@ section .slider {
         align-items: center;
         /* padding-top: 20%;  */
         user-select: none;
+        opacity: .4;
+        transform: scale(.4);
+        transition: all 600ms ease-out;
     }
+        .slider .item[data-active] {
+            opacity: 1;
+            transform: scale(1);
+        }
         .item img {
             height: 40vh;
-            transition: transform 400ms ease-in-out;
+            /* transition: transform 700ms ease-in-out; */
         }
         /* .slider.grabbed {
             cursor: grabbing;
