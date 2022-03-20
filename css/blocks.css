@@ -76,25 +76,30 @@ section .pointer-right {
         padding: .5rem;
         border: 2px solid var(--theme-clr);
         border-radius: 50%;
+        background-color: var(--vests-clr);;
     }
+        #cardigans .pointer-left { background-color: var(--cardigans-clr); }
+        #cardigans .pointer-right { background-color: var(--cardigans-clr); }
+        #watches .pointer-left { background-color: var(--watches-clr); }
+        #watches .pointer-right { background-color: var(--watches-clr); }
+
     .pointer-left {
         transform: rotate(180deg);
     }
         .pointer-left:hover, 
         .pointer-right:hover {
-            background-color: var(--vests-clr);
+            background-color: transparent;
         }
-        #cardigans .pointer-left:hover { background-color: var(--cardigans-clr); }
-        #cardigans .pointer-right:hover { background-color: var(--cardigans-clr); }
-        #watches .pointer-left:hover { background-color: var(--watches-clr); }
-        #watches .pointer-right:hover { background-color: var(--watches-clr); }
+        #cardigans .pointer-left:hover { background-color: transparent; }
+        #cardigans .pointer-right:hover { background-color: transparent; }
+        #watches .pointer-left:hover { background-color: transparent; }
+        #watches .pointer-right:hover { background-color: transparent; }
 
-        .pointer-left:active, 
         .pointer-right:active {
             transform: scale(.9);
         }
         .pointer-left:active {
-            transform: rotate(180deg);
+            transform: scale(.9) rotate(180deg);
         }
 
         .pointer-left:focus, 
