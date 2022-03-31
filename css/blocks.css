@@ -72,11 +72,12 @@ section .pointer-right {
     .pointer-left, 
     .pointer-right {
         user-select: none;
-        transition: transform 250ms linear;
+        transition: transform 100ms linear;
         padding: .5rem;
         border: 2px solid var(--theme-clr);
         border-radius: 50%;
-        background-color: var(--vests-clr);;
+        background-color: var(--vests-clr);
+        box-shadow: 0 0 5px 3px #222;
     }
         #cardigans .pointer-left { background-color: var(--cardigans-clr); }
         #cardigans .pointer-right { background-color: var(--cardigans-clr); }
@@ -96,10 +97,12 @@ section .pointer-right {
         #watches .pointer-right:hover { background-color: transparent; }
 
         .pointer-right:active {
-            transform: scale(.9);
+            transform: scale(.95);
+            box-shadow: 0 0 2px 1px #000;
         }
         .pointer-left:active {
-            transform: scale(.9) rotate(180deg);
+            transform: scale(.95) rotate(180deg);
+            box-shadow: 0 0 2px 1px #000;
         }
 
         .pointer-left:focus, 
