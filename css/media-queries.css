@@ -19,12 +19,6 @@
             display: flex;
             justify-content: space-evenly;
         }
-        /* section .pointer-left {
-            left: 20vw;
-        }
-        section .pointer-right {
-            right: 5vw;
-        } */
         section .category {
             order: 1;
             width: 15vw;
@@ -38,6 +32,7 @@
                 transform: rotate(0);
                 font-size: 5rem;
             }
+
         section .slider {
             order: 2;
             width: 85vw;
@@ -49,7 +44,7 @@
             }
                 .item img {
                     height: 40vh;
-                }  
+                }
 }
 
 /* desktop screens */
@@ -81,12 +76,7 @@
             display: flex;
             justify-content: space-evenly;
         }
-        /* section .pointer-left {
-            left: 25vw;
-        }
-        section .pointer-right {
-            right: 10vw;
-        } */
+        
         section .category {
             order: 1;
             width: 15vw;
@@ -147,14 +137,7 @@
             display: flex;
             justify-content: space-evenly;
         }
-        /* section .pointer-left {
-            left: 25vw;
-            height: 3rem;
-        }
-        section .pointer-right {
-            right: 10vw;
-            height: 3rem;
-        } */
+        
         section .category {
             order: 1;
             width: 15vw;

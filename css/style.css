@@ -26,8 +26,6 @@ section .pointer-right.hide {visibility: hidden;}
     top: 0; bottom: 0; left: 0; right: 0;
     background-color: var(--vests-clr);
     color: var(--theme-clr);
-    /* outline: .25rem solid var(--theme-clr);
-    outline-offset: -5rem; */
     display: flex;
     justify-content: center;
     align-items: center;

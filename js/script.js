@@ -1,6 +1,7 @@
 const controlBtns = document.querySelectorAll('[data-controls]');
 
 const headerElem = document.querySelector('header');
+
 const cardigansSection = document.querySelector('#cardigans');
 const watchesSection = document.querySelector('#watches');
 
