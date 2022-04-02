@@ -65,3 +65,12 @@ const watchesSectionObs = new IntersectionObserver((entries, intObsOptions) => {
 }, intObsOptions);
 
 watchesSectionObs.observe(watchesSection);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const introScreen = document.querySelector('.intro-screen');
+    
+    setTimeout(() => {
+        introScreen.parentNode.removeChild(introScreen);
+    }, 6000);
+});

@@ -24,16 +24,16 @@ section .pointer-right.hide {visibility: hidden;}
 .landscape-mode {
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
-    background-color: var(--nav-bg-clr);
+    background-color: var(--vests-clr);
     color: var(--theme-clr);
-    outline: .25rem solid var(--theme-clr);
-    outline-offset: -2rem;
+    /* outline: .25rem solid var(--theme-clr);
+    outline-offset: -5rem; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
     .intro-screen .intro-logo {
-        height: 30vh;
+        height: 50vh;
         filter: drop-shadow(3px 0 #000)
                 drop-shadow(0 3px #000)
                 drop-shadow(-3px 0 #000)
@@ -42,19 +42,28 @@ section .pointer-right.hide {visibility: hidden;}
 
 .intro-screen {
     z-index: 1111;
-    animation: fade-out 4s linear forwards;
+    opacity: 0;
+    animation: fade-out 3s linear 3s backwards;
 }
 .intro-screen.js-fade-out {
     display: none;
 }
-    @keyframes fade-out {
-        70% {
+.intro-screen .intro-logo {
+    animation: scale-out 2s linear forwards 1s;
+}
+    @keyframes scale-out {
+        50% {
             transform: scale(1);
             opacity: 1;
         }
         100% {
-            transform: scale(2);
+            transform: scale(1.5);
             opacity: 0;
+        }
+    }
+    @keyframes fade-out {
+        from {
+            opacity: 1;
         }
     }
 
@@ -75,5 +84,7 @@ section .pointer-right.hide {visibility: hidden;}
         display: flex;
         justify-content: center;
         align-items: center;
+
+        color: #234567;
     }
 }
