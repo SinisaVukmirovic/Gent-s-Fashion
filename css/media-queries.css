@@ -19,6 +19,10 @@
             display: flex;
             justify-content: space-evenly;
         }
+            .pointer-left, 
+            .pointer-right {
+                padding: .25rem;
+            }
         section .category {
             order: 1;
             width: 15vw;
@@ -76,6 +80,10 @@
             display: flex;
             justify-content: space-evenly;
         }
+            .pointer-left, 
+            .pointer-right {
+                padding: .5rem;
+            }
         
         section .category {
             order: 1;

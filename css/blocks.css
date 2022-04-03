@@ -67,7 +67,7 @@ section {
     .pointer-right {
         user-select: none;
         transition: transform 100ms linear;
-        padding: .5rem;
+        /* padding: .5rem; */
         border: 2px solid var(--theme-clr);
         border-radius: 50%;
         background-color: var(--vests-clr);
