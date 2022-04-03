@@ -73,5 +73,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     setTimeout(() => {
         introScreen.parentNode.removeChild(introScreen);
-    }, 6000);
+    }, 5000);
 });
