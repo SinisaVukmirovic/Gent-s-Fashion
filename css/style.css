@@ -41,13 +41,13 @@ section .pointer-right.hide {visibility: hidden;}
 .intro-screen {
     z-index: 1111;
     opacity: 0;
-    animation: fade-out 2s linear 3s backwards;
+    animation: fade-out 2s ease-in 3s backwards;
 }
 .intro-screen.js-fade-out {
     display: none;
 }
 .intro-screen .intro-logo {
-    animation: scale-out 2s linear forwards 1s;
+    animation: scale-out 2s ease-in forwards 1s;
 }
     @keyframes scale-out {
         50% {
