@@ -41,7 +41,7 @@ section .pointer-right.hide {visibility: hidden;}
 .intro-screen {
     z-index: 1111;
     opacity: 0;
-    animation: fade-out 2s ease-in 3s backwards;
+    animation: fade-out 1s ease-in 3s backwards;
 }
 .intro-screen.js-fade-out {
     display: none;
