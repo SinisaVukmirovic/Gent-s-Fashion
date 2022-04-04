@@ -1,4 +1,4 @@
-![Image](https://raw.githubusercontent.com/SinisaVukmirovic/Gents-Fashion/master/demo.png)
+![Image](https://raw.githubusercontent.com/SinisaVukmirovic/Gent-s-Fashion/master/demo.png)
 
 ## Gent's Fashion App
 
