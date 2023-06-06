@@ -14,6 +14,7 @@ body {
     font-family: sans-serif;
     height: 100vh;
     position: relative;
+    cursor: url('../imgs/assets/cursors/cursor.png'), auto;
 }
 
 /* some app assets elements */

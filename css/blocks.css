@@ -153,3 +153,6 @@ section .slider {
         .item img {
             height: 40vh;
         }
+        .item img:hover {
+            cursor: url('../imgs/assets/cursors/cursor-ok.png'), auto;
+        }
