@@ -61,6 +61,8 @@ section {
         display: flex;
         justify-content: space-evenly;
         width: 100%;
+
+        z-index: 9;
     }
 
     .pointer-left, 
@@ -82,9 +84,9 @@ section {
         #watches .pointer-left { background-color: var(--watches-clr); }
         #watches .pointer-right { background-color: var(--watches-clr); }
 
-    .pointer-left {
-        transform: rotate(180deg);
-    }
+        .pointer-left {
+            transform: rotate(180deg);
+        }   
         .pointer-left:hover, 
         .pointer-right:hover {
             background-color: transparent;
